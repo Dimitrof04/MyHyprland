@@ -1,0 +1,110 @@
+* {
+    border: none;
+    border-radius: 0;
+    font-family: "JetBrainsMono Nerd Font", sans-serif;
+    font-size: 13px;
+    min-height: 0;
+}
+/* Fundo transparente para a barra invisível que segura os blocos */
+window#waybar {
+    background-color: transparent;
+}
+
+/* Estilo dos Workspaces (Os "Dots" à esquerda) */
+#workspaces {
+    background-color: #1e1e2e;
+    padding: 2px 8px;
+    margin: 4px 0;
+    border-radius: 16px;
+    border: 1px solid #313244;
+}
+
+#workspaces button {
+    padding: 0 6px;
+    color: #45475a; /* Círculos inativos (apagados) */
+    background-color: transparent;
+}
+
+#workspaces button.active {
+    color: #ffffff; /* Círculo ativo atualizado para Branco */
+}
+
+#workspaces button:hover {
+    color: #ffffff;
+}
+
+/* Estilo para os blocos individuais (Efeito cápsula/pill flutuante) */
+#clock,
+#pulseaudio,
+#network,
+#battery,
+#tray {
+    background-color: #1e1e2e;
+    color: #ffffff; /* TODOS os textos e ícones agora são Brancos */
+    padding: 0 14px;
+    margin: 4px 3px;
+    border-radius: 16px;
+    border: 1px solid #313244;
+}
+
+/* Cores customizadas para cada elemento se destacar nos cantos */
+#clock {
+    color: #ffffff;
+    font-weight: bold;
+}
+
+#pulseaudio {
+    color: #a6e3a1; /* Verde */
+}
+
+#network {
+    color: #f9e2af; /* Amarelo suave */
+    padding: 0 16px; /* Um pouco mais de espaço já que não tem texto */
+}
+
+#battery {
+    color: #ffffff; /* Vermelho/Rosa Celeste */
+}
+
+/* Estado de bateria crítica (Apenas para segurança visual) */
+#battery.critical:not(.charging) {
+    background-color: #f38ba8;
+    color: #11111b;
+}
+
+/* Se o bluetooth estiver desligado, ele fica cinza opaco */
+#bluetooth.disabled {
+    color: #585b70;
+}
+
+#tray {
+    padding: 0 10px;
+}
+
+/* Botão do Arch em Círculo Perfeito (Estilo Dot 1:1) */
+#custom-arch {
+    background-color: #1e1e2e;
+    color: #ffffff; /* Atualizado para Branco */
+    margin: 4px 3px;
+    border: 1px solid #313244;
+    font-size: 14px;
+    border-radius: 99px; /* Força o círculo */
+    
+    /* Truque GTK para proporção 1:1 */
+    min-width: 26px;
+    padding: 0;
+}
+
+/* Estilo do bloco de Bluetooth */
+#bluetooth {
+    background-color: #1e1e2e;
+    color: #89b4fa; /* Azul Celeste */
+    padding: 0 14px;
+    margin: 4px 3px;
+    border-radius: 16px;
+    border: 1px solid #313244;
+}
+
+#bluetooth.disabled {
+    color: #6c7086; /* Fica cinza apagado quando você desligar */
+}
