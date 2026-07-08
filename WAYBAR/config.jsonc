@@ -43,7 +43,7 @@
         "format-ethernet": "󰈀 ",
         "format-disconnected": "󰖪 ",
         // QUANDO CLICAR: Abre o menu de selecionar Wi-Fi com lista e botão de ligar/desligar
-        "on-click": "$HOME/.config/waybar/NetworkWindow.py", 
+        // "on-click": "$HOME/.config/waybar/NetworkWindow.py", 
         "tooltip-format-wifi": "Sinal: {signaldBm}dBm | SSID: {essid}"
     },
     "bluetooth": {
