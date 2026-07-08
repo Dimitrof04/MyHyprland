@@ -16,7 +16,7 @@ window#waybar {
     padding: 2px 8px;
     margin: 4px 0;
     border-radius: 16px;
-    border: 1px solid #313244;
+    border: 1px solid #ffffff; /* Borda alterada para Branco */
 }
 
 #workspaces button {
@@ -44,7 +44,7 @@ window#waybar {
     padding: 0 14px;
     margin: 4px 3px;
     border-radius: 16px;
-    border: 1px solid #313244;
+    border: 1px solid #ffffff; /* Borda alterada para Branco */
 }
 
 /* Cores customizadas para cada elemento se destacar nos cantos */
@@ -87,13 +87,14 @@ window#waybar {
     background-color: #1e1e2e;
     color: #ffffff; /* Atualizado para Branco */
     margin: 4px 3px;
-    border: 1px solid #313244;
+    border: 1px solid #ffffff; /* Borda alterada para Branco */
     font-size: 14px;
     border-radius: 99px; /* Força o círculo */
     
     /* Truque GTK para proporção 1:1 */
     min-width: 26px;
     padding: 0;
+    margin-right: 0.5rem;
 }
 
 /* Estilo do bloco de Bluetooth */
@@ -103,7 +104,7 @@ window#waybar {
     padding: 0 14px;
     margin: 4px 3px;
     border-radius: 16px;
-    border: 1px solid #313244;
+    border: 1px solid #ffffff; /* Borda alterada para Branco */
 }
 
 #bluetooth.disabled {

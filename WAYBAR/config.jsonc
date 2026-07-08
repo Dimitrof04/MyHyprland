@@ -5,13 +5,13 @@
     "margin-top": 8,
     "margin-left": 10,
     "margin-right": 10,
-    "margin-bottom": -10,
+    "margin-bottom": -17,
 
     // Adicionado "custom/arch" no início da esquerda
     "modules-left": ["custom/arch", "hyprland/workspaces"],
     "modules-center": ["clock"],
     // Adicionado "bluetooth" na direita
-    "modules-right": ["pulseaudio", "bluetooth", "network", "battery", "tray"],
+    "modules-right": ["tray","pulseaudio", "bluetooth", "network", "battery"],
 
     "custom/arch": {
         "format": " 󰣇 ", // Ícone clássico do Arch Linux
@@ -43,7 +43,7 @@
         "format-ethernet": "󰈀 ",
         "format-disconnected": "󰖪 ",
         // QUANDO CLICAR: Abre o menu de selecionar Wi-Fi com lista e botão de ligar/desligar
-        "on-click": "$HOME/.config/waybar/soundmenu.lua", 
+        "on-click": "$HOME/.config/waybar/NetworkWindow.py", 
         "tooltip-format-wifi": "Sinal: {signaldBm}dBm | SSID: {essid}"
     },
     "bluetooth": {

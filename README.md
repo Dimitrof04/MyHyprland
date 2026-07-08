@@ -1,36 +1,35 @@
-# 🌌 MyHyprland
+# 🌌 MyDesktop
 
-Seja bem-vindo ao meu repositório de configurações pessoais para o **Hyprland**! Este repositório contém meus dotfiles customizados, focados em produtividade, estética minimalista e alta performance em ambientes Wayland.
+A sleek, minimalist, and highly optimized Hyprland configuration.
 
----
-
-## 📸 Screenshots
-*Adicione links para prints ou gifs do seu desktop aqui para mostrar como ficou o resultado final!*
-| ![Screenshot 1](https://via.placeholder.com/800x450.png?text=Adicione+sua+screenshot+aqui) |
-| :---: |
+> [!TIP]
+> This build is highly recommended for Arch-based distributions (Arch Linux, CachyOS, Archcraft, EndeavourOS, etc.).
 
 ---
 
-## 🛠️ Componentes e Recursos
-Esta build do Hyprland utiliza os seguintes softwares para compor o ambiente:
+## 🛠️ Components & Features
 
-*   **Window Manager:** [Hyprland](https://hyprland.org/) (Dynamic tiling Wayland compositor)
-*   **Barra de Status:** *(Ex: Waybar / Polybar)*
-*   **Launcher de Apps:** *(Ex: Rofi / Wofi / Fuzzel)*
-*   **Emulador de Terminal:** *(Ex: Kitty / Alacritty / Foot)*
-*   **Notificações:** *(Ex: Dunst / Mako)*
-*   **Gerenciador de Wallpaper:** *(Ex: Hyprpaper / Swaybg / SWWW)*
-*   **Bloqueio de Tela:** *(Ex: Hyprlock / Swaylock-effects)*
+This Hyprland environment is built using the following core software:
+
+* **Window Manager:** [Hyprland](https://hyprland.org/) *(Dynamic tiling Wayland compositor)*
+* **Status Bar:** Waybar
+* **App Launcher:** Rofi (Wayland fork) / Wofi
+* **Terminal Emulator:** Kitty
+* **Notification Daemon:** Dunst / Mako
+* **Wallpaper Manager:** Hyprpaper
+* **Screen Locker:** Hyprlock
 
 ---
 
-## 🚀 Instalação e Estrutura
+## Recomend Tools :
+**hyprpaper hyprlock cmatrix**
 
-### Pré-requisitos
-Certifique-se de estar usando uma distribuição compatível com o Hyprland (como Arch Linux, Fedora ou Ubuntu) e de ter o gerenciador de janelas instalado antes de aplicar os arquivos de configuração.
+### How installand?
+```bash
+sudo pacman -S hyprland waybar rofi-wayland kitty
+# if you install before, you dont need istall again
 
-### Como aplicar as configurações
-1. Faça o clone deste repositório para a sua máquina:
-   ```bash
-   git clone [https://github.com/Dimitrof04/MyHyprland.git](https://github.com/Dimitrof04/MyHyprland.git)
-   cd MyHyprland
+git clone https://github.com/Dimitrof04/MyHyprland.git
+cd MyHyprland
+
+# thanks for use :3
