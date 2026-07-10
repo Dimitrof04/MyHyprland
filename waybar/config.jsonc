@@ -46,7 +46,7 @@
         "format-disabled": "󰖪  Disabled",         // O que mostra quando você desliga no botão
         "tooltip-format": "{ifname} via {gwaddr} ",
         // QUANDO CLICAR: Abre o menu de selecionar Wi-Fi com lista e botão de ligar/desligar
-        "on-click": "$HOME/.config/waybar/network-menu", 
+        "on-click": "$HOME/.config/waybar/NetworkWindow", 
         "tooltip-format-wifi": "Sinal: {signaldBm}dBm | SSID: {essid}"
     },
     "bluetooth": {

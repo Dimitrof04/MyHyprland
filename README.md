@@ -22,7 +22,7 @@ This Hyprland environment is built using the following core software:
 
 ### How installand?
 ```bash
-sudo pacman -S hyprland waybar hyprlauncher kitty awww
+sudo pacman -S hyprland waybar hyprlauncher kitty awww bluema
 # if you install before, you dont need istall again
 
 #I recomend but if you dont want
