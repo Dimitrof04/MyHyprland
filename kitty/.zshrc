@@ -1,0 +1,2 @@
+fastfetch
+PROMPT=$'╭─ %~\n╰─ %n ~\$ '
