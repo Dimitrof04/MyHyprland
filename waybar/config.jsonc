@@ -7,18 +7,15 @@
     "margin-right": 10,
     "margin-bottom": -17,
 
-    // Adicionado "custom/arch" no início da esquerda
     "modules-left": ["custom/arch", "hyprland/workspaces"],
     "modules-center": ["clock"],
-    // Adicionado "bluetooth" na direita
     "modules-right": ["tray","pulseaudio", "bluetooth", "network", "battery"],
 
     "custom/arch": {
-        "format": " 󰣇 ", // Ícone clássico do Arch Linux
+        "format": " 󰣇 ", 
         "tooltip": false,
-        "on-click": "hyprlauncher" // Abre o menu de aplicativos do sistema ao clicar
+        "on-click": "hyprlauncher" 
     },
-
     "hyprland/workspaces": {
         "disable-scroll": true,
         "all-outputs": true,
@@ -39,27 +36,27 @@
         "format-icons": ["󰂎", "󰁺", "󰁻", "󰁼", "󰁽", "󰁾", "󰁿", "󰂀", "󰂁", "󰂂", "󰁹"]
     },
     "network": {
-        "format-wifi": "  {essid}",
+        "format-wifi": "",
         "format-ethernet": "󰈀",
-        "format-linked": "󰈀  {ifname} (No IP)",
-        "format-disconnected": "󰖪  Disconnected", // O que mostra quando desconecta
-        "format-disabled": "󰖪  Disabled",         // O que mostra quando você desliga no botão
-        "tooltip-format": "{ifname} via {gwaddr} ",
-        // QUANDO CLICAR: Abre o menu de selecionar Wi-Fi com lista e botão de ligar/desligar
-        "on-click": "$HOME/.config/waybar/NetworkWindow", 
-        "tooltip-format-wifi": "Sinal: {signaldBm}dBm | SSID: {essid}"
+        "format-disconnected": "󰖪",
+        "format-disabled": "󰖪",
+        "on-click": "$HOME/.config/waybar/NetworkWindow"
+        //"tooltip": true,
+        // Só executa o script se a janela ativa NÃO estiver em fullscreen (retorno 0)
+        //"tooltip-format": "{essid}<!-- exec: [ $(hyprctl activewindow -j | jq -r '.fullscreen') -eq 0 ] && $HOME/.config/waybar/NetworkWindow -->"
     },
+
     "bluetooth": {
-        "format": " ",
-        "format-disabled": "󰂲 ", 
-        "format-connected": "󰂱 {device_alias}",
-        // QUANDO CLICAR: Abre o menu para ligar/desligar e conectar em fones/dispositivos
-        "on-click": "$HOME/.config/waybar/BluetoothMenu", 
-        "tooltip-format": "{controller_alias}\t{controller_address}",
-        "tooltip-format-connected": "{controller_alias}\t{controller_address}\n\n{device_enumerate}"
+        "format": "",
+        "format-disabled": "󰂲",
+        "format-connected": "󰂱",
+        "on-click": "$HOME/.config/waybar/BluetoothMenu"
+        //"tooltip": true,
+        // Mesma trava para o Bluetooth
+        //"tooltip-format": "Bluetooth<!-- exec: [ $(hyprctl activewindow -j | jq -r '.fullscreen') -eq 0 ] && $HOME/.config/waybar/BluetoothMenu -->"
     },
     "pulseaudio": {
-        "format": "{icon}  {volume}%",
+        "format": "{icon}~{volume}%",
         "format-muted": "󰝟 ",
         "format-icons": {
             "default": ["󰕿", "󰖀", "󰕾"]

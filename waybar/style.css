@@ -34,17 +34,18 @@ window#waybar {
 }
 
 /* Estilo para os blocos individuais (Efeito cápsula/pill flutuante) */
-#clock ,
+#clock,
 #pulseaudio,
 #network,
+#bluetooth, /* Adicionado aqui para herdar exatamente os mesmos padrões */
 #battery,
 #tray {
     background-color: #1e1e2e;
-    color: #ffffff; /* TODOS os textos e ícones agora são Brancos */
+    color: #ffffff; 
     padding: 0 14px;
-    margin: 4px 3px;
+    margin: 4px 3px; /* Padronizado em 4px vertical */
     border-radius: 16px;
-    border: 1px solid #ffffff; /* Borda alterada para Branco */
+    border: 1px solid #ffffff; 
 }
 
 /* Cores customizadas para cada elemento se destacar nos cantos */
@@ -55,27 +56,22 @@ window#waybar {
 }
 
 #pulseaudio {
-    color: #ffffff; /* Verde */
+    color: #ffffff; 
 }
 
+/* Ajustado para ficar idêntico ao bluetooth */
 #network {
-    color: #ffffff; /* Amarelo suave */
-    padding: 0 16px; /* Um pouco mais de espaço já que não tem texto */
+    color: #ffffff; 
 }
 
 #battery {
-    color: #ffffff; /* Vermelho/Rosa Celeste */
+    color: #ffffff; 
 }
 
 /* Estado de bateria crítica (Apenas para segurança visual) */
 #battery.critical:not(.charging) {
     background-color: #f38ba8;
     color: #11111b;
-}
-
-/* Se o bluetooth estiver desligado, ele fica cinza opaco */
-#bluetooth.disabled {
-    color: #585b70;
 }
 
 #tray {
@@ -85,11 +81,11 @@ window#waybar {
 /* Botão do Arch em Círculo Perfeito (Estilo Dot 1:1) */
 #custom-arch {
     background-color: #1e1e2e;
-    color: #ffffff; /* Atualizado para Branco */
-    margin: 4px 3px;
-    border: 1px solid #ffffff; /* Borda alterada para Branco */
+    color: #ffffff; 
+    margin: 4px 3px; /* Alinhado com a altura dos outros */
+    border: 1px solid #ffffff; 
     font-size: 14px;
-    border-radius: 99px; /* Força o círculo */
+    border-radius: 99px; 
     
     /* Truque GTK para proporção 1:1 */
     min-width: 26px;
@@ -97,16 +93,7 @@ window#waybar {
     margin-right: 0.5rem;
 }
 
-/* Estilo do bloco de Bluetooth */
-#bluetooth {
-    background-color: #1e1e2e;
-    color: #ffffff; /* Azul Celeste */
-    padding: 0 14px;
-    margin: 4px 3px;
-    border-radius: 16px;
-    border: 1px solid #ffffff; /* Borda alterada para Branco */
-}
-
+/* Estilo específico do bloco de Bluetooth (Apenas o que muda) */
 #bluetooth.disabled {
     color: #6c7086; /* Fica cinza apagado quando você desligar */
 }

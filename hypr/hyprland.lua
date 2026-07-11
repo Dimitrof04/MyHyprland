@@ -14,7 +14,7 @@ hl.monitor({
 
 -- Set programs that you use
 local terminal    = "kitty"
-local fileManager = "nautilus" -- gnome files
+local fileManager = "nautilus" -- gnome files (nautilus)
 local menu        = "hyprlauncher"
 
 
@@ -238,6 +238,8 @@ hl.bind(mainMod .. " + Page_Down", hl.dsp.focus({ workspace = "e+1" }))
 -- [GNOME] Mover janela para outra Workspace (Super + Shift + Page_Up/Page_Down)
 hl.bind(mainMod .. " + SHIFT + Page_Up",   hl.dsp.window.move({ workspace = "e-1" }))
 hl.bind(mainMod .. " + SHIFT + Page_Down", hl.dsp.window.move({ workspace = "e+1" }))
+
+hl.bind(mainMod .. " + SHIFT + R", hl.dsp.exec_cmd("killall waybar && waybar")) -- restart waybar
 
 -- Mantido suporte a mudar via números [1-10]
 for i = 1, 10 do
